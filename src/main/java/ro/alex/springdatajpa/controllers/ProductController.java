@@ -5,6 +5,7 @@ import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import ro.alex.springdatajpa.models.dtos.ProductDTO;
 import ro.alex.springdatajpa.models.entities.Product;
@@ -12,7 +13,7 @@ import ro.alex.springdatajpa.services.ProductService;
 
 import java.util.List;
 
-
+@Validated
 @RestController
 @RequestMapping("/api/products")
 public class ProductController {
